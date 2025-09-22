@@ -1,5 +1,5 @@
-import { EMPLOYEES, type EmployeeReq, type RoomKey } from "../data/employees";
-import { ROOMS } from "../data/rooms";
+import { EMPLOYEES, type EmployeeReq, type RoomKey } from "../data/employee";
+import { ROOMS } from "../data/room";
 import { inWindow, toMin, minToHHMM } from "./time";
 
 export type Decision = {
