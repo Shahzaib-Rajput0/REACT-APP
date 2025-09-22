@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { FlatList, Pressable, Text, View } from "react-native";
-import { EMPLOYEES } from "../data/employees";
+import { EMPLOYEES } from "../data/employee";
 import { getSortedRequests, simulateAccess, type Decision } from "../lib/simulate";
 
 export default function HomeTab() {
