@@ -4,8 +4,13 @@ import { FlatList, Pressable, Text, View } from "react-native";
 import { EMPLOYEES } from "../data/employee";
 import { getSortedRequests, simulateAccess, type Decision } from "../lib/simulate";
 
-const TAB_BAR_HEIGHT = 52; // must match your (tabs)/_layout.tsx tabBarStyle.height
+import { Platform } from "react-native";
+if (Platform.OS === "web") {
+  require("./global.css");
+}
 
+
+const TAB_BAR_HEIGHT = 52; 
 export default function HomeTab() {
   const insets = useSafeAreaInsets();
   const [results, setResults] = useState<Decision[] | null>(null);
